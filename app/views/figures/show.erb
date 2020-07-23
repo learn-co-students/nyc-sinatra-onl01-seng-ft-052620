@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Figure page</title>
+    </head>
+
+    <body>
+      <h1>Figure information</h1>
+      <h3>Figure Name: <%= @figure.name %></h3>
+      
+      <h3>Landmarks: <%= @figure.name %></h3>
+        <ul>
+            <% @figure.landmarks.each do |landmark| %>
+                <li><%= landmark.name %></li>
+            <% end %>
+        </ul>
+
+        <h3>Titles: <%= @figure.name %></h3>
+        <ul>
+        <% @figure.titles.each do |title| %>
+            <li><%= title.name %></li>
+        <% end %>
+        </ul>
+
+    </body>
+</html>
